@@ -1,0 +1,69 @@
+Test Cases for User Login Form
+Assumptions:
+
+The login form has two fields: Email and Password.
+There is a Login button to submit the form.
+Error messages are displayed for invalid inputs.
+Email should be in a valid format (e.g., user@example.com).
+Password field accepts a specific length (e.g., min 8 characters).
+There may be 'Forgot Password' and 'Sign Up' links on the form.
+
+Test Case 1: Verify the Login Form UI Elements
+Test Objective: Ensure all elements are displayed.
+Steps:
+Navigate to the login page.
+Expected Result:
+Email and Password fields are displayed.
+Login button is displayed.
+'Forgot Password' and 'Sign Up' links are displayed.
+
+Test Case 2: Verify Login with Valid Email and Password
+Test Objective: Ensure successful login with valid credentials.
+Steps:
+Enter a valid email in the Email field.
+Enter a valid password in the Password field.
+Click on the Login button.
+Expected Result: User is successfully logged in and redirected to a dashboard page.
+
+Test Case 3: Verify Login with Invalid Email Format
+Test Objective: Check validation for email format.
+Steps:
+Enter an invalid email format.
+Enter a valid password.
+Click on the Login button.
+Expected Result: Error message displayed, like "Invalid email format."
+
+Test Case 4: Verify Login with Incorrect Password
+Test Objective: Check error handling for incorrect password.
+Steps:
+Enter a valid email.
+Enter an incorrect password.
+Click on the Login button.
+Expected Result: Error message displayed, like "Incorrect password."
+
+Test Case 5: Verify Login with Empty Email and Password Fields
+Test Objective: Ensure validation when fields are empty.
+Steps:
+Leave Email and Password fields empty.
+Click on the Login button.
+Expected Result: Error message displayed, like "Email and Password are required."
+
+Test Case 6: Verify Password Field Masking
+Test Objective: Ensure password field hides actual entered characters.
+Steps:
+Enter a password in the Password field.
+Expected Result: Password actual characters should be hidden.
+
+Test Case 7: Verify Minimum Password Length Requirement
+Test Objective: Check password length validation.
+Steps:
+Enter a valid email.
+Enter a password shorter than the required length (e.g., 4 characters).
+Click on the Login button.
+Expected Result: Error message displayed, like "Password must be at least 8 characters long."
+
+Test Case 8: Verify 'Forgot Password' Link Redirection
+Test Objective: Ensure the 'Forgot Password' link works.
+Steps:
+Click on the 'Forgot Password' link.
+Expected Result: Redirects to the password reset page.
